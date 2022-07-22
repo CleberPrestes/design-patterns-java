@@ -1,0 +1,5 @@
+package com.prestes.service;
+
+public interface ClienteService {
+
+}

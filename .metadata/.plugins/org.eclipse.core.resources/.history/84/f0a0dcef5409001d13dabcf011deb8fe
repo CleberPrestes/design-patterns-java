@@ -1,0 +1,47 @@
+package com.prestes.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.prestes.model.Cliente;
+import com.prestes.model.ClienteRepository;
+import com.prestes.service.ClienteService;
+
+
+@Service
+public class ClienteServiceImpl implements ClienteService {
+	
+	@Autowired
+	ClienteRepository clienteRepository;
+	
+
+	@Override
+	public Iterable<Cliente> buscarTodos() {
+		return clienteRepository.findAll();
+	}
+
+	@Override
+	public Cliente buscarPorId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void inserir(Cliente cliente) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void atualizar(Long id, Cliente cliente) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deletar(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

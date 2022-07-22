@@ -1,0 +1,5 @@
+package com.prestes.model;
+
+public interface EnderecoRepository {
+
+}
